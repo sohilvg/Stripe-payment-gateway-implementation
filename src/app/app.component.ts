@@ -70,7 +70,7 @@ export class AppComponent {
     this.newpay = event.target.value;
     var user = this;
     var handler = (<any>window).StripeCheckout.configure({
-      key: "pk_test_JUeNhWSwK3XbhChuKtAqZsdd00oVL62BWl", // your pk test key from stripe
+      key: "pk_test_********", // your pk test key from stripe
       locale: "auto",
       token: function(token: any) {
         console.log(token);
