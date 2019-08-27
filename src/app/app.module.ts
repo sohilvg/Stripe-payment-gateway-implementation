@@ -9,7 +9,8 @@ import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 //   NbSidebarModule,
 //   NbLayoutModule
 // } from "@nebular/theme";
-
+// import { HttpClient } from "@angular/common/http";
+import { HttpClientModule } from "@angular/common/http";
 import { AppComponent } from "./app.component";
 
 @NgModule({
@@ -20,7 +21,9 @@ import { AppComponent } from "./app.component";
     // NbLayoutModule,
     // NgbModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    // HttpClient,
+    HttpClientModule
 
     // ThemeModule.forRoot(),
     // NbSpinnerModule

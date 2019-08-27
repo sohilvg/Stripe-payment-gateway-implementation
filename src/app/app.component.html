@@ -1,28 +1,33 @@
-<div class="container">
-  <div class="row">
-    <div class="col-md-12">
-      <form [formGroup]="form" (ngSubmit)="submit()">
-        <div class="col-md-3">
+<!-- ipAddress section -->
+<!-- <h1> Your ip address is: <h1> -->
+    <!-- <h2>{{ipAddress.country}}</h2> -->
 
-          <label for="orders">Select Your Country</label>
-        </div>
+    <!-- Country selector -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <!-- <form [formGroup]="form" (ngSubmit)="submit()"> -->
+            <div class="col-md-3">
 
-        <!-- <div class="col-md-2"></div> -->
-        <div class="col-md-2">
-          <select formControlName="orders" id="orders">
-            <option *ngFor="let order of orders; let i = index" [value]="orders[i].id">
-              {{orders[i].name}}
-            </option>
-          </select>
+              <!-- <label for="orders">Select Your Country</label> -->
+            </div>
+
+            <!-- <div class="col-md-2"></div> -->
+            <!-- <div class="col-md-2">
+              <select formControlName="orders" id="orders">
+                <option *ngFor="let order of orders; let i = index" [value]="orders[i].id">
+                  {{orders[i].name}}
+                </option>
+              </select>
+            </div> -->
+            <br>
+            <!-- <button>submit</button> -->
+          <!-- </form> -->
         </div>
-        <br>
-        <!-- <button>submit</button> -->
-      </form>
-    </div>
-  </div>
-  <br>
-  <br>
-  <!-- <div class="row col-md-12">
+      </div>
+      <br>
+      <br>
+      <!-- <div class="row col-md-12">
   <div class="col-md-12">
     <h3>Select Region</h3>
   </div>
@@ -41,20 +46,22 @@
 </div> -->
 
 
-  <!-- <nb-card>
+      <!-- <nb-card>
   <nb-card-header>Payment</nb-card-header>
   <nb-card-body> -->
-  <div class="container">
-    <div class="col-md-6">
-      <span *ngIf="allDone" style="color: green; font-size: 50px;"> Payment done :) </span>
 
-      <p>Select a amonunt you want to pay</p>
-      <select class="form-control" (change)="openCheckout($event)">
-        <option selected="true" disabled="disabled">Choose one</option>
-        <option *ngFor="let v of pay" [value]="v.value">{{v.money}}</option>
-      </select>
-    </div>
-    <!-- <div class="col-md-12">
+      <!-- Money selector -->
+      <div class="container">
+        <div class="col-md-6">
+          <span *ngIf="allDone" style="color: green; font-size: 50px;"> Payment done :) </span>
+
+          <p>Select a amonunt you want to pay</p>
+          <select class="form-control" (change)="openCheckout($event)">
+            <option selected="true" disabled="disabled">Choose one</option>
+            <option *ngFor="let v of pay" [value]="v.value">{{v.money}}</option>
+          </select>
+        </div>
+        <!-- <div class="col-md-12">
         <h3>Enter Your Payment Amount</h3>
       </div>
       <div class="row col-md-12">
@@ -66,12 +73,12 @@
         </div>
       </div>
     </div> -->
-    <!-- </nb-card-body>
+        <!-- </nb-card-body>
 </nb-card> -->
-  </div>
+      </div>
 
 
-  <!-- 
+      <!-- 
 <h1>Custom Stripe Form</h1>
 
 <form action="" method="POST" id="payment-form" (submit)="getToken()">
