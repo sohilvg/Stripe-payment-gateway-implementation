@@ -18,6 +18,11 @@
 
 <body>
   <app-root></app-root>
+  <script src="https://js.stripe.com/v3/"></script>
+  <script type="text/javascript">
+    var stripe = Stripe('pk_test_JUeNhWSwK3XbhChuKtAqZsdd00oVL62BWl'); // use your test publishable key
+    var elements = stripe.elements();
+  </script>
 </body>
 
 </html>
